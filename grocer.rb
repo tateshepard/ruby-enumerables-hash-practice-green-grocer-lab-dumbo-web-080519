@@ -1,5 +1,5 @@
 def consolidate_cart(cart)
-  []
+ cart.count { |k, _| k.to_s.include?('yes') }
 end
 
 def apply_coupons(cart, coupons)
